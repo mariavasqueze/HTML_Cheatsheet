@@ -1,0 +1,77 @@
+body {
+    background-image: url(../Images/R1yLsdt.png);
+    background-size: cover;
+    padding-left: 100px;
+    padding-bottom: 50px;
+    
+}
+h1 {
+    background-color: rgba(0,0,0,80%);
+    padding: 50px;
+    color: white;
+    font-size: 40px;
+    display: inline-block;
+    
+}
+
+.menu {
+    font-size: 18px;
+    background-color: rgba(0,0,0,80%);
+    color: black;
+}
+
+.first-block {
+    background-color: rgba(0,0,0,80%);
+    vertical-align:middle;
+    display: inline-block;
+}
+
+.second-block { 
+    background-color: rgba(0,0,0,80%);
+    vertical-align:middle;
+    display: inline-block;
+    padding: 2px 0px 16px 0px;
+}
+#nav-title {
+    display: inline-flex;
+    text-align: center;
+    color: white;
+    background-color: darkred;
+    padding: 5px 100px 5px 90px;
+    font-size: 18px;
+
+} 
+
+h2 {
+    color: white;
+    background-color: darkred;
+    display: inline-block;
+    padding: 5px 40px 5px 40px;
+}
+h3 {
+    color: white;
+    background-color: royalblue;
+    display: inline-block;
+    padding: 5px 30px 5px 5px;
+}
+table {
+    font-size: 18px;
+    color: #f2f2f2;
+}
+tr {
+    background-color: rgba(0,0,0,50%);
+    border: black;
+    text-align: inherit;
+}
+td {
+    padding-left: 5px;
+    color: #c9c9c9;
+}
+th {
+    background-color: cornflowerblue;
+    padding: 10px 0px 10px 5px;
+    text-align: inherit;
+}
+.element {
+    color: #00a86b;
+}
