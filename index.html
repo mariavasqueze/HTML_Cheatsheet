@@ -13,7 +13,10 @@
         <!--Navigation Options html and css-->
         <nav class="first-block">
             <p id="nav-title">HTML</p>
-                <li class="menu"><a href="#structure">Structure & Tags</a></li>
+                <li class="menu"><a href="#structural">Structural Elements</a></li>
+                <li class="menu"><a href="#phrase-elements">Phrase Elements</a></li>
+                <li class="menu"><a href="#list-elements">List Elements</a></li>
+                <li class="menu"><a href="#main-elements">Main</a></li>
                 <li class="menu"><a href="#tables">Table Tags & Attributes</a></li>
                 <li class="menu"><a href="#forms">Form Elements</a></li>
                 <li class="menu"><a href="#other">Other Useful Elements</a></li>
@@ -27,12 +30,191 @@
         </nav>
     </header>
 <br>
-    
-    <!--HTML Structre and Tags Table -->
-    <section class="html-structure">
+    <!--Top - Can't be seen-->
+    <section class="html-table">
         <h2>HTML Cheat Sheet</h2>
         <br>
-        <h3 id="structure">Structure & Tags</h3>
+        <h3>Top | Don't show</h3>
+        <table>
+            <thead>
+                <th>Tag</th>
+                <th>Name</th>
+                <th>Description</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><span class="element">At the top</span></td>
+                    <td>!DOCTYPE</td>
+                    <td>Begin doc with &lt!DOCTYPE html&gt , then, &lt;html lang="en"&gt;</td>
+                </tr>
+                <tr>
+                    <td><span class="element">&lt;head&gt;</span></td>
+                    <td>Head</td>
+                    <td>Contains metadata about the page. Doesn't display it.</td>
+                </tr>
+                <tr>
+                    <td><span class="element">&lt;title&gt;</span></td>
+                    <td>Title</td>
+                    <td>The text displayed on the website's tab on the browser</td>
+                </tr>
+                <tr>
+                    <td><span class="element">&lt;meta&gt;</span></td>
+                    <td>meta charset="UTF-8"</td>
+                    <td>Defines character encoding for the HTML doc. charset="UTF-8"</td>
+                </tr>
+                <tr>
+                    <td><span class="element">&lt;link&gt;</span></td>
+                    <td>Link</td>
+                    <td>Link to other sheets of your code. add to add css: &lt;link rel="stylehseet" href="./whereitisstored"&gt;</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+    <!--Structural Elements-->
+    <section class="html-table">
+        <h3 id="structural">Structural Elements</h3>
+        <table>
+            <thead id="rows">
+                <th>Tag</th>
+                <th>Name</th>
+                <th>Description</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><span class="element">&lt;body&gt;</span></td>
+                    <td>body</td>
+                    <td>What the user can see. Any markup with the content of the page</td>
+                </tr>
+                <tr>
+                    <td><span class="element">&lt;header&gt;</span></td>
+                    <td>Header</td>
+                    <td>For intro contents h1 to h6</td>
+                </tr>
+                <tr>
+                    <td><span class="element">&lt;nav&gt;</span></td>
+                    <td>Navigation</td>
+                    <td>Bulk of content of webpage. </td>
+                </tr>
+                <tr>
+                    <td><span class="element">&lt;main&gt;</span></td>
+                    <td>Main</td>
+                    <td>Contains metadata about the page. Doesn't display it.</td>
+                </tr>
+                <tr>
+                    <td><span class="element">&lt;footer&gt;</span></td>
+                    <td>Footer</td>
+                    <td>Contains contact info, copyright, terms of use, etc.</td>
+                </tr>
+                <tr>
+                    <td><span class="element">&lt;aside&gt;</span></td>
+                    <td>Aside Info.</td>
+                    <td>Adiitional information, not required to understand. Like end notes, comments, etc.</td>
+                </tr>
+                <tr>
+                    <td><span class="element">&lt;section&gt;</span></td>
+                    <td>Section</td>
+                    <td>Divide in specific section for clear reading. Chapters, heading, etc. **Must have a heading and other content, otherwise it's a mistake to use it</td>
+                </tr>
+                <tr>
+                    <td><span class="element">&lt;article&gt;</span></td>
+                    <td>Article</td>
+                    <td>Understant type of content. Mostly for screen readers.</td>
+                </tr>
+                <tr>
+                    <td><span class="element">&lt;time&gt;</span></td>
+                    <td>Date or Time</td>
+                    <td>Useful to date articles or blog posts &lt;time datetime="2022-12-01"&gt;Jan 12&lt;time&gt;</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!--Phrase Elements-->
+    <section class="html-table">
+        <h3 id="phrase-elements">Phrase Elements</h3>
+        <table>
+            <thead id="rows">
+                <th>Tag</th>
+                <th>Name</th>
+                <th>Description</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><span class="element">&lt;em&gt; or &lt;i&gt;</span></td>
+                    <td>Emphasis</td>
+                    <td>Style text as italic</td>
+                </tr>
+                <tr>
+                    <td><span class="element">&lt;strong&gt; or &lt;b&gt;</span></td>
+                    <td>Strong Importance</td>
+                    <td>Style text as bold</td>
+                </tr>
+                <tr>
+                    <td><span class="element">&lt;small&gt;</span></td>
+                    <td>Small text</td>
+                    <td>Makes the text small. Can replace a p, no need to be embeded in it.</td>
+                </tr>
+                <tr>
+                    <td><span class="element">&lt;var&gt;</span></td>
+                    <td>for Variables</td>
+                    <td>use vas to add a variable X, then &lt;sub&gt; or &lt;sup&gt; (inside var) for exponents</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!--List Elements-->
+    <section class="html-table">
+        <h3 id="list-elements">List Elements</h3>
+        <table>
+            <thead>
+                <th>Tag</th>
+                <th>Name</th>
+                <th>Description</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><span class="element">&lt;ul&gt;</span></td>
+                    <td>Unordered list</td>
+                    <td>bullet point list</td>
+                </tr>
+                <tr>
+                    <td><span class="element">&lt;ol&gt;</span></td>
+                    <td>Ordered list</td>
+                    <td>numbered point list</td>
+                </tr>
+                <tr>
+                    <td><span class="element">&lt;il&gt;</span></td>
+                    <td>List elements</td>
+                    <td>Write elements within a list</td>
+                </tr>
+                <tr>
+                    <td><span class="element">&lt;dl&gt;</span></td>
+                    <td>Description list</td>
+                    <td>Sets like question to answer list</td>
+                </tr>
+                <tr>
+                    <td><span class="element">&lt;dt&gt;</span></td>
+                    <td>Description element 1</td>
+                    <td>Like the question or title in the description list</td>
+                </tr>
+                <tr>
+                    <td><span class="element">&lt;dd&gt;</span></td>
+                    <td>Description element 2</td>
+                    <td>The answer or body of the element 1 of the description list</td>
+                </tr>
+                <tr>
+                    <td><span class="element">List attributes</span></td>
+                    <td>type, reversed, and start</td>
+                    <td>type="A", or "I" or "1", and start can be any point on the list</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!--Main Elements -->
+    <section class="html-structure">
+        <h3 id="main-elements">Main</h3>
         <table>
             <thead>
                 <tr id="rows">
@@ -43,189 +225,74 @@
             </thead>
             <tbody>
                 <tr>
-                    <td><span class="element">At the top</span></td>
-                    <td>!DOCTYPE</td>
-                    <td>Begin doc with &lt!DOCTYPE html&gt , then, &lthtml lang="en"&gt</td>
-                </tr>
-                <tr>
-                    <td><span class="element">&lthead&gt</span></td>
-                    <td>Head</td>
-                    <td>Contains metadata about the page. Doesn't display it.</td>
-                </tr>
-                <tr>
-                    <td><span class="element">&lttitle&gt</span></td>
-                    <td>Title</td>
-                    <td>The text displayed on the website's tab on the browser</td>
-                </tr>
-                <tr>
-                    <td><span class="element">&ltmeta&gt</span></td>
-                    <td>meta charset="UTF-8"</td>
-                    <td>Defines character encoding for the HTML doc. charset="UTF-8"</td>
-                </tr>
-                <tr>
-                    <td><span class="element">&ltlink&gt</span></td>
-                    <td>Link</td>
-                    <td>Link to other sheets of your code. add to add css: &ltlink rel="stylehseet" href="./whereitisstored"&gt</td>
-                </tr>
-                <tr>
-                    <td><span class="element">&ltheader&gt</span></td>
-                    <td>Header</td>
-                    <td>For intro contents h1 to h6</td>
-                </tr>
-                <tr>
-                    <td><span class="element">&ltnav&gt</span></td>
-                    <td>Navigation</td>
-                    <td>Bulk of content of webpage. </td>
-                </tr>
-                <tr>
-                    <td><span class="element">&ltfooter&gt</span></td>
-                    <td>Footer</td>
-                    <td>Contains contact info, copyright, terms of use, etc.</td>
-                </tr>
-                <tr>
-                    <td><span class="element">&ltmain&gt</span></td>
-                    <td>Main</td>
-                    <td>Contains metadata about the page. Doesn't display it.</td>
-                </tr>
-                <tr>
-                    <td><span class="element">&ltbody&gt</span></td>
-                    <td>body</td>
-                    <td>What the user can see. Any markup with the content of the page</td>
-                </tr>
-                <tr>
-                    <td><span class="element">&ltsection&gt</span></td>
-                    <td>Section</td>
-                    <td>Divide in specific section for clear reading. Chapters, heading, etc.</td>
-                </tr>
-                <tr>
-                    <td><span class="element">&ltarticle&gt</span></td>
-                    <td>Article</td>
-                    <td>Understant type of content. Mostly for screen readers.</td>
-                </tr>
-                <tr>
-                    <td><span class="element">&ltaside&gt</span></td>
-                    <td>Aside Info.</td>
-                    <td>Adiitional information, not required to understand. Like end notes, comments, etc.</td>
-                </tr>
-                <tr>
-                    <td><span class="element">&ltfigure&gt</span></td>
-                    <td>Figure</td>
-                    <td>Encapsulate media like images, diagrams, etc.</td>
-                </tr>
-                <tr>
-                    <td><span class="element">&ltfigcaption&gt</span></td>
-                    <td>Figure caption</td>
-                    <td>Goes inside figure. to describe the media in the figure tag. → if we move the image, the caption moves with it.</td>
-                </tr>
-                <tr>
-                    <td><span class="element">&ltimg&gt</span></td>
-                    <td>Image</td>
-                    <td>Embed an Image. Can use src with link, or follow the path to file if in the same folder as code.</td>
-                </tr>
-                <tr>
-                    <td><span class="element">&ltaudio&gt</span></td>
-                    <td>Audio Element</td>
-                    <td>To embed audio element. use src and type audio.mp3</td>
-                </tr>
-                <tr>
-                    <td><span class="element">&ltvideo&gt</span></td>
-                    <td>Video</td>
-                    <td>Embed a video. Useful attributes: controls, autoplay, loop. *Can also have width and height here. </td>
-                </tr>
-                <tr>
-                    <td><span class="element">&lth1-h6&gt</span></td>
+                    <td><span class="element">&lt;h1-h6&gt;</span></td>
                     <td>Headings h1-h6</td>
                     <td>Headings, most important h1, to least h6.</td>
                 </tr>
                 <tr>
-                    <td><span class="element">&ltp&gt</span></td>
+                    <td><span class="element">&lt;p&gt;</span></td>
                     <td>Paragraph</td>
                     <td>Paragraph Text</td>
                 </tr>
                 <tr>
-                    <td><span class="element">&ltdfn&gt</span></td>
+                    <td><span class="element">&lt;a&gt;</span></td>
+                    <td>Anchor Elements</td>
+                    <td>Link elements outside of page add href, no closing tag. Write id="name", call it with a href="#name" href="linkHere" **Add target="_blank" to open in new tab</td>
+                </tr>
+                <tr>
+                    <td><span class="element">&lt;dfn&gt;</span></td>
                     <td>Definition</td>
                     <td>To add a definition inside a paragrph or other</td>
                 </tr>
                 <tr>
-                    <td><span class="element">&ltspan&gt</span></td>
+                    <td><span class="element">&lt;span&gt;</span></td>
                     <td>Span</td>
                     <td>In-line container. Works to separate text within another element like p. And give it a class or id.</td>
                 </tr>
                 <tr>
-                    <td><span class="element">&ltem&gt</span></td>
-                    <td>Emphasis</td>
-                    <td>Style text as italic</td>
-                </tr>
-                <tr>
-                    <td><span class="element">&ltstrong&gt</span></td>
-                    <td>Strong Importance</td>
-                    <td>Style text as bold</td>
-                </tr>
-                <tr>
-                    <td><span class="element">&ltbr&gt</span></td>
+                    <td><span class="element">&lt;br&gt;</span></td>
                     <td>Line Break</td>
                     <td>Create a line break between elements (This is void = no closing command)</td>
                 </tr>
                 <tr>
-                    <td><span class="element">&ltblockquote&gt</span></td>
+                    <td><span class="element">&lt;figure&gt;</span></td>
+                    <td>Figure</td>
+                    <td>Encapsulate media like images, diagrams, etc.</td>
+                </tr>
+                <tr>
+                    <td><span class="element">&lt;figcaption&gt;</span></td>
+                    <td>Figure caption</td>
+                    <td>Goes inside figure. to describe the media in the figure tag. → if we move the image, the caption moves with it.</td>
+                </tr>
+                <tr>
+                    <td><span class="element">&lt;img&gt;</span></td>
+                    <td>Image</td>
+                    <td>Embed an Image. Can use src with link, or follow the path to file if in the same folder as code.</td>
+                </tr>
+                <tr>
+                    <td><span class="element">&lt;audio&gt;</span></td>
+                    <td>Audio Element</td>
+                    <td>To embed audio element. use src and type audio.mp3</td>
+                </tr>
+                <tr>
+                    <td><span class="element">&lt;video&gt;</span></td>
+                    <td>Video</td>
+                    <td>Embed a video. Useful attributes: controls, autoplay, loop. *Can also have width and height here. </td>
+                </tr>
+                <tr>
+                    <td><span class="element">&lt;blockquote&gt;</span></td>
                     <td>Indent</td>
                     <td>Creates indentation or block of space before an element (open & closing tags)</td>
                 </tr>
                 <tr>
-                    <td><span class="element">&lthr&gt</span></td>
+                    <td><span class="element">&lt;hr&gt;</span></td>
                     <td>Thematic break</td>
                     <td>Creates a line between topic. It's to separate stories. *Shows as a horizontal line</td>
                 </tr>
                 <tr>
-                    <td><span class="element">&ltul&gt</span></td>
-                    <td>Unordered list</td>
-                    <td>bullet point list</td>
-                </tr>
-                <tr>
-                    <td><span class="element">&ltol&gt</span></td>
-                    <td>Ordered list</td>
-                    <td>numbered point list</td>
-                </tr>
-                <tr>
-                    <td><span class="element">&ltil&gt</span></td>
-                    <td>List elements</td>
-                    <td>Write elements within a list</td>
-                </tr>
-                <tr>
-                    <td><span class="element">&ltdl&gt</span></td>
-                    <td>Description list</td>
-                    <td>Sets like question to answer list</td>
-                </tr>
-                <tr>
-                    <td><span class="element">&ltdt&gt</span></td>
-                    <td>Description element 1</td>
-                    <td>Like the question or title in the description list</td>
-                </tr>
-                <tr>
-                    <td><span class="element">&ltdd&gt</span></td>
-                    <td>Description element 2</td>
-                    <td>The answer or body of the element 1 of the description list</td>
-                </tr>
-                <tr>
-                    <td><span class="element">List attributes</span></td>
-                    <td>type, reversed, and start</td>
-                    <td>type="A", or "I" or "1", and start can be any point on the list</td>
-                </tr>
-                <tr>
-                    <td><span class="element">&lta&gt</span></td>
-                    <td>Anchor Elements</td>
-                    <td>Link elements outside of page add href, no closing tag. Write id="name", call it with a href="#name"</td>
-                </tr>
-                <tr>
-                    <td><span class="element">&ltbutton&gt</span></td>
+                    <td><span class="element">&lt;button&gt;</span></td>
                     <td>Button Element</td>
                     <td>Several types --> submit, radio, checkbox, text...</td>
-                </tr>
-                <tr>
-                    <td><span class="element">&ltvar&gt</span></td>
-                    <td>for Variables</td>
-                    <td>use vas to add a variable X, then sub or sup (insede var) for exponents</td>
                 </tr>
             </tbody>
         </table>
@@ -245,37 +312,37 @@
             </thead>
             <tbody>
                 <tr>
-                    <td><span class="element">&lttable&gt</span></td>
+                    <td><span class="element">&lt;table&gt;</span></td>
                     <td>Table</td>
                     <td>Create table</td>
                 </tr>
                 <tr>
-                    <td><span class="element">&ltthead&gt</span></td>
+                    <td><span class="element">&lt;thead&gt;</span></td>
                     <td>Table head</td>
                     <td>Table headings</td>
                 </tr>
                 <tr>
-                    <td><span class="element">&lttbody&gt</span></td>
+                    <td><span class="element">&lt;tbody&gt;</span></td>
                     <td>Table body</td>
                     <td>Include all data minus the heading.</td>
                 </tr>
                 <tr>
-                    <td><span class="element">&lttfoot&gt</span></td>
+                    <td><span class="element">&lt;tfoot&gt;</span></td>
                     <td>Table footer</td>
                     <td>For the table footer elements</td>
                 </tr>
                 <tr>
-                    <td><span class="element">&ltth&gt</span></td>
+                    <td><span class="element">&lt;th&gt;</span></td>
                     <td>Table heading</td>
                     <td>go inside a row in thead, are the headings of the table</td>
                 </tr>
                 <tr>
-                    <td><span class="element">&lttr&gt</span></td>
+                    <td><span class="element">&lt;tr&gt;</span></td>
                     <td>Table Row</td>
                     <td>Create a row.</td>
                 </tr>
                 <tr>
-                    <td><span class="element">&lttd&gt</span></td>
+                    <td><span class="element">&lt;td&gt;</span></td>
                     <td>Table data element</td>
                     <td>Creates a data element, that shows.</td>
                 </tr>
@@ -307,21 +374,21 @@
             </thead>
             <tbody>
                 <tr>
-                    <td><span class="element">&ltform&gt</span></td>
+                    <td><span class="element">&lt;form&gt;</span></td>
                     <td>Create Form</td>
                     <td>Syntax: &ltform action="#.html" method="GET"&gt</td>
                 </tr>
                 <tr>
-                    <td><span class="element">&ltlabel&gt</span></td>
+                    <td><span class="element">&lt;label&gt;</span></td>
                     <td>Label (o input)</td>
-                    <td>*Must connect them with input with same ID. Syntax: &ltlabel for="meal">What do you want to eat?&gt</td>
+                    <td>*Must connect them with input with same ID. Syntax: &lt;label for="meal">What do you want to eat?&gt;</td>
                 </tr>
                 <tr>
-                    <td><span class="element">&ltinput&gt</span></td>
+                    <td><span class="element">&lt;input&gt;</span></td>
                     <td>Input (of label)</td>
                     <td>
                         <ul>
-                            <li>Syntax: &ltinput type="text" id="meal" name="meal" value="breakfast"&gt</li>
+                            <li>Syntax: &lt;input type="text" id="meal" name="meal" value="breakfast"&gt;</li>
                             <li>Types: text, password, number</li>
                             <li><strong>Attributes:</strong></li>
                             <li>Step: to increase or decrease numbers within the field. step=”1”</li>
@@ -333,15 +400,15 @@
                             <li>Radio: show multiple options, and let users choose one or more. *give them the same name to put options together.</li>
                             <li>Dropdown list: create a select attribute and within it create by writing:</li>
                                 <ul>
-                                    <li>&ltselect id="lunch" name="lunch"&gt &ltoption value="pizza"&gtPizza&lt/option&gt&lt/select&gt</li>
+                                    <li>&lt;select id="lunch" name="lunch"&gt; &lt;option value="pizza"&gt;Pizza&lt;/option&gt&lt/select&gt;</li>
                                 </ul> 
                              <li>Textarea: bigger text field</li>   
                                 <ul>
-                                    <li>&lttextarea id=”blog” name=”blog” rows=”5” cols=”30&gtText Goes here&lt/textarea&gt</li>
+                                    <li>&lt;textarea id=”blog” name=”blog” rows=”5” cols=”30&gt;Text Goes here&lt;/textarea&gt;</li>
                                     <li>Set text length, like Twitter: minlength=”5” maxlength=”250”</li>
                                     <li>Regular expression: to make sure the content the user inputs follows specific guidelines Ex: pattern=”[0-9] {14-16}”</li>
                                 </ul>
-                            <li>Submit: &ltinput type=”submit” value=”send”&gt</li>
+                            <li>Submit: &lt;input type=”submit” value=”send”&gt;</li>
                         </ul>
                     </td>
                 </tr>
@@ -351,9 +418,9 @@
                     <td>To create dropdowns. Add after the label, and add all &ltoption&gt items inside</td>
                 </tr>
                 <tr>
-                    <td><span class="element">&ltdatalist&gt</span></td>
+                    <td><span class="element">&lt;datalist&gt;</span></td>
                     <td>Datalist</td>
-                    <td>Shows a list of options, but not as a dropdown as select. Add all data &ltoption&gt items inside.</td>
+                    <td>Shows a list of options, but not as a dropdown as select. Add all data &lt;option&gt; items inside.</td>
                 </tr>
             </tbody>
         </table>
@@ -391,7 +458,7 @@
         <h2>CSS Cheat Sheet</h2>
         <br>
         <h3 id="css">Check out this PDF with a review of everything-CSS seen in the codeacademy path</h3>
-        <h3><a href="./resources/docs/CSS Cheat Sheet - Review path codeacademy.pdf"><strong>Click Here!</strong></a></h3>
+        <h3><a href="./resources/docs/CSS Cheat Sheet - Review path codeacademy.pdf" target="_blank"><strong>Click Here!</strong></a></h3>
         <br>
         <br>
 
